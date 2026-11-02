@@ -1,0 +1,15 @@
+#secondhead {
+    background-image: radial-gradient(circle, rgb(25, 25, 25), black);
+    color: rgb(117, 117, 117);
+    text-align: center;
+}
+
+body {
+    background-image: radial-gradient(circle, rgb(25, 25, 25), black);
+}
+
+header {
+    color: aliceblue;
+    text-align: center;
+    font-size: 50px;
+}
