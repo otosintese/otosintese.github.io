@@ -1,15 +1,19 @@
 #secondhead {
-    background-image: radial-gradient(circle, rgb(25, 25, 25), black);
+    background-color: #18181B;
     color: rgb(117, 117, 117);
     text-align: center;
+    font-style: oblique;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-image: radial-gradient(circle, rgb(25, 25, 25), black);
+    background-color: #18181B;
 }
 
 header {
     color: aliceblue;
     text-align: center;
     font-size: 50px;
+    background-color: #18181B;
 }
