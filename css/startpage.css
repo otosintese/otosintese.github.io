@@ -7,6 +7,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+#sobre {
+    color: rgb(117, 117, 117);
+    text-align: center;
+    font-style: oblique;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
     background-color: #18181B;
 }
@@ -16,4 +24,45 @@ header {
     text-align: center;
     font-size: 50px;
     background-color: #18181B;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 999px;
+  background: #1f7a3d;
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  background: #1a6633;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
+}
+
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.btn:focus-visible {
+  outline: 2px solid #1f7a3d;
+  outline-offset: 2px;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }

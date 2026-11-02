@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos — otoworks</title>
+  <meta name="description" content="Explore os projetos open source da otoworks: ferramentas de automação, utilitários e experimentos da comunidade.">
+  <meta name="theme-color" content="#05070b">
+  <meta property="og:title" content="Projetos — otoworks">
+  <meta property="og:description" content="Ferramentas de automação, utilitários e experimentos open source da otoworks.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/otoworks2.png">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header" data-header>
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="brand" href="index.html" aria-label="otoworks — início">
+        <span class="brand__mark" aria-hidden="true">o</span>
+        <span class="brand__name">otoworks<span class="brand__dot">.org</span></span>
+      </a>
+
+      <button class="nav__toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav__menu" id="nav-menu" data-nav-menu>
+        <ul class="nav__links">
+          <li><a class="nav__link" href="index.html">Início</a></li>
+          <li><a class="nav__link is-active" href="projetos.html">Projetos</a></li>
+          <li><a class="nav__link" href="index.html#sobre">Sobre</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a class="btn btn--ghost btn--sm" href="https://github.com/otoworks" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.2.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+            GitHub
+          </a>
+          <a class="btn btn--primary btn--sm" href="https://fluxer.app/" target="_blank" rel="noopener noreferrer">Fluxer</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb reveal" aria-label="Trilha de navegação">
+          <a href="index.html">Início</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Projetos</span>
+        </nav>
+        <span class="eyebrow reveal" style="--d:40ms"><span class="eyebrow__dot eyebrow__dot--purple"></span>Repositórios &amp; experimentos</span>
+        <h1 class="page-title reveal" style="--d:80ms">Nossos <span class="grad-text">projetos</span></h1>
+        <p class="page-lead reveal" style="--d:120ms">
+          Ferramentas abertas para automatizar tarefas, facilitar o trabalho e experimentar ideias.
+          Clique em um cartão para abrir o projeto em uma nova aba.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="projects-toolbar reveal" style="--d:160ms">
+          <div class="search">
+            <svg class="icon search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+            <input type="search" class="search__input" id="project-search" placeholder="Buscar por nome, tag ou descrição..." autocomplete="off" aria-label="Buscar projetos" data-search>
+          </div>
+          <div class="toolbar__right">
+            <span class="result-count" data-result-count aria-live="polite">Carregando…</span>
+          </div>
+        </div>
+
+        <div class="chips" data-chips role="group" aria-label="Filtrar por tag"></div>
+
+        <div class="projects-grid projects-grid--page" data-projects-grid aria-live="polite">
+          <div class="skeleton-card" aria-hidden="true"></div>
+          <div class="skeleton-card" aria-hidden="true"></div>
+          <div class="skeleton-card" aria-hidden="true"></div>
+          <div class="skeleton-card" aria-hidden="true"></div>
+          <div class="skeleton-card" aria-hidden="true"></div>
+          <div class="skeleton-card" aria-hidden="true"></div>
+        </div>
+
+        <div class="state-box" data-empty hidden>
+          <span class="state-box__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+          </span>
+          <h2>Nenhum projeto encontrado</h2>
+          <p>Tente outra busca ou remova o filtro de tag.</p>
+          <button class="btn btn--ghost btn--sm" type="button" data-clear>Limpar filtros</button>
+        </div>
+
+        <div class="state-box state-box--error" data-error hidden>
+          <span class="state-box__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
+          </span>
+          <h2>Não foi possível carregar os projetos</h2>
+          <p>
+            Verifique se o arquivo <code>projetos.json</code> existe e tem um JSON válido.
+            Se estiver abrindo o site direto do disco (<code>file://</code>), rode um servidor local:
+            <code>python3 -m http.server 8000</code>.
+          </p>
+          <button class="btn btn--ghost btn--sm" type="button" data-retry>Recarregar</button>
+        </div>
+
+        <details class="how-to">
+          <summary>
+            <span class="how-to__icon" aria-hidden="true">+</span>
+            Como adicionar um projeto
+          </summary>
+          <div class="how-to__body">
+            <p>Edite o arquivo <code>projetos.json</code> na raiz do site e adicione um objeto ao array <code>projects</code>:</p>
+            <pre><code>{
+  "title": "Meu projeto",
+  "description": "Uma frase curta explicando o que ele faz.",
+  "url": "https://exemplo.com",
+  "tags": ["python", "automação"],
+  "status": "ativo",
+  "featured": true,
+  "accent": "purple",
+  "icon": "🚀"
+}</code></pre>
+            <ul>
+              <li><code>status</code>: <code>ativo</code>, <code>em breve</code> ou <code>arquivado</code>.</li>
+              <li><code>accent</code>: <code>green</code> ou <code>purple</code>.</li>
+              <li><code>featured</code>: <code>true</code> para aparecer também na página inicial.</li>
+              <li><code>icon</code>: um emoji ou o caminho de uma imagem (ex.: <code>assets/meu-icone.png</code>).</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand brand--sm" href="index.html">
+          <span class="brand__mark" aria-hidden="true">o</span>
+          <span class="brand__name">otoworks<span class="brand__dot">.org</span></span>
+        </a>
+        <p>Ferramentas abertas para trabalhos mais simples.</p>
+      </div>
+      <nav class="footer__links" aria-label="Links do rodapé">
+        <a href="index.html">Início</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="index.html#sobre">Sobre</a>
+        <a href="https://github.com/otoworks" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://fluxer.app/" target="_blank" rel="noopener noreferrer">Fluxer</a>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span data-year>2026</span> otoworks — sem fins lucrativos.</span>
+      <span class="footer__hint">Projetos gerenciados por <code>projetos.json</code></span>
+    </div>
+  </footer>
+
+  <script src="js/cards.js" defer></script>
+  <script src="js/projects.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
