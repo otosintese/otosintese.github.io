@@ -1,64 +1,14 @@
 {
   "projects": [
     {
-      "title": "Otoworks CLI",
-      "description": "Uma coleção de comandos para automatizar tarefas do dia a dia: organização de arquivos, backups e produtividade no terminal.",
-      "url": "https://github.com/otoworks",
-      "tags": ["python", "cli", "automação"],
+      "title": "otoworks.org (github.io)",
+      "description": "Códigos completos do otowork.org (website)",
+      "url": "https://github.com/otosintese/otosintese.github.io",
+      "tags": ["template"],
       "status": "ativo",
       "featured": true,
       "accent": "green",
       "icon": "⌨️"
-    },
-    {
-      "title": "Startpage",
-      "description": "Uma página inicial limpa e personalizável para o navegador, com atalhos rápidos e foco em privacidade.",
-      "url": "https://github.com/otoworks",
-      "tags": ["html", "css", "web"],
-      "status": "ativo",
-      "featured": true,
-      "accent": "purple",
-      "icon": "🌐"
-    },
-    {
-      "title": "Fluxer Community",
-      "description": "Nosso ponto de encontro: um espaço aberto para conversar sobre tecnologia, tirar dúvidas e colaborar em projetos.",
-      "url": "https://fluxer.app/",
-      "tags": ["comunidade", "open source"],
-      "status": "ativo",
-      "featured": true,
-      "accent": "green",
-      "icon": "💬"
-    },
-    {
-      "title": "PlanilhaBot",
-      "description": "Automação de planilhas para relatórios recorrentes: consolida dados, gera resumos e exporta em segundos.",
-      "url": "https://github.com/otoworks",
-      "tags": ["python", "automação", "dados"],
-      "status": "ativo",
-      "featured": false,
-      "accent": "purple",
-      "icon": "📊"
-    },
-    {
-      "title": "DevTools Kit",
-      "description": "Utilitários pequenos e independentes para desenvolvedores: formatadores, conversores e geradores de código.",
-      "url": "https://github.com/otoworks",
-      "tags": ["javascript", "web", "ferramentas"],
-      "status": "em breve",
-      "featured": false,
-      "accent": "green",
-      "icon": "🧰"
-    },
-    {
-      "title": "Otoworks Website",
-      "description": "Este site: uma vitrine open source da comunidade, construída com HTML, CSS e JavaScript puro.",
-      "url": "https://otoworks.org",
-      "tags": ["html", "css", "web"],
-      "status": "ativo",
-      "featured": false,
-      "accent": "purple",
-      "icon": "🪐"
     }
   ]
 }

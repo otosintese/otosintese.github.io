@@ -3,13 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>otoworks — ferramentas que trabalham por você</title>
-  <meta name="description" content="otoworks é uma comunidade open source que cria programas para facilitar, automatizar e otimizar trabalhos. Sem fins lucrativos.">
+  <title>otoworks — comunidade open source</title>
+  <meta name="description" content="otoworks é uma comunidade pequena de desenvolvimento que busca ajudar pessoas com dúvidas ou simplesmente só querem conversar">
   <meta name="theme-color" content="#05070b">
-  <meta property="og:title" content="otoworks — ferramentas que trabalham por você">
-  <meta property="og:description" content="Comunidade open source que cria programas para facilitar, automatizar e otimizar trabalhos.">
+  <meta name="color-scheme" content="dark">
+  <meta name="author" content="otoworks">
+  <meta property="og:title" content="otoworks — comunidade">
+  <meta property="og:description" content="Desenvolvimento, dicas e conversas">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/otoworks2.png">
+  <meta property="og:url" content="https://otoworks.org/">
+  <meta property="og:image" content="https://otoworks.org/assets/otoworks2.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +27,7 @@
   <header class="site-header" data-header>
     <nav class="nav container" aria-label="Navegação principal">
       <a class="brand" href="index.html" aria-label="otoworks — início">
-        <span class="brand__mark" aria-hidden="true">o</span>
+        <span class="brand__mark" aria-hidden="true"><img src="assets/favicon.png" alt=""></span>
         <span class="brand__name">otoworks<span class="brand__dot">.org</span></span>
       </a>
 
@@ -34,8 +38,8 @@
       <div class="nav__menu" id="nav-menu" data-nav-menu>
         <ul class="nav__links">
           <li><a class="nav__link is-active" href="index.html">Início</a></li>
+          <li><a class="nav__link" href="#comunidade">Comunidade</a></li>
           <li><a class="nav__link" href="projetos.html">Projetos</a></li>
-          <li><a class="nav__link" href="#sobre">Sobre</a></li>
         </ul>
         <div class="nav__actions">
           <a class="btn btn--ghost btn--sm" href="https://github.com/otoworks" target="_blank" rel="noopener noreferrer">
@@ -53,32 +57,33 @@
     <section class="hero">
       <div class="container hero__grid">
         <div class="hero__copy">
-          <span class="eyebrow reveal"><span class="eyebrow__dot"></span>Comunidade open source</span>
+          <span class="eyebrow reveal"><span class="eyebrow__dot"></span>Comunidade aberta</span>
           <h1 class="hero__title reveal" style="--d:60ms">
-            Ferramentas simples para <span class="grad-text">trabalhos complexos.</span>
+            Pessoas desocupadas, <span class="grad-text">Aqui você encontra.</span>
           </h1>
           <p class="hero__lead reveal" style="--d:120ms">
-            A otoworks cria programas para facilitar, automatizar e otimizar o seu dia a dia.
-            Código aberto, sem fins lucrativos e feito por pessoas que gostam de tecnologia.
+            A otoworks é uma comunidade de desenvolvedores, curiosos e gente que gosta de
+            tecnologia.troca ideia no
+            Fluxer e aprende junto.
           </p>
           <div class="hero__actions reveal" style="--d:180ms">
-            <a class="btn btn--primary" href="projetos.html">
-              Explorar projetos
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
-            </a>
-            <a class="btn btn--ghost" href="https://fluxer.app/" target="_blank" rel="noopener noreferrer">
-              Entrar no Fluxer
+            <a class="btn btn--primary" href="https://fluxer.app/" target="_blank" rel="noopener noreferrer">
+              Entrar na comunidade
               <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="projetos.html">
+              Ver projetos
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
             </a>
           </div>
           <div class="hero__meta reveal" style="--d:240ms">
             <span>
               <svg class="icon icon--green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m20 6-11 11-5-5"/></svg>
-              100% open source
+              Aberta a todo mundo
             </span>
             <span>
               <svg class="icon icon--purple" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20"/><path d="M2 12h20"/></svg>
-              Sem fins lucrativos
+              Iniciantes são bem recebidos
             </span>
           </div>
         </div>
@@ -92,81 +97,108 @@
               <span class="dot dot--red" aria-hidden="true"></span>
               <span class="dot dot--yellow" aria-hidden="true"></span>
               <span class="dot dot--green" aria-hidden="true"></span>
-              <span class="code-card__title">otoworks — terminal</span>
+              <span class="code-card__title">comunidade otoworks</span>
             </div>
-            <pre class="code-card__body"><code><span class="c-comment"># inicie um projeto com a gente</span>
-<span class="c-prompt">$</span> otoworks <span class="c-flag">--init</span>
-<span class="c-ok">✓</span> automações prontas
-<span class="c-ok">✓</span> comunidade conectada
-<span class="c-ok">✓</span> código aberto
-<span class="c-prompt">$</span> <span class="c-cursor" aria-hidden="true">▍</span></code></pre>
-          </div>
-
-          <span class="float-chip float-chip--green" aria-hidden="true">● open source</span>
-          <span class="float-chip float-chip--purple" aria-hidden="true">&lt;/&gt; automação</span>
-          <span class="float-chip float-chip--mono" aria-hidden="true">MIT</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Stats -->
-    <section class="stats-wrap">
-      <div class="container">
-        <div class="stats reveal">
-          <div class="stat">
-            <span class="stat__num"><span data-project-count>—</span></span>
-            <span class="stat__label">projetos publicados</span>
-          </div>
-          <div class="stat">
-            <span class="stat__num"><span data-count="100">0</span><span class="stat__suffix">%</span></span>
-            <span class="stat__label">open source</span>
-          </div>
-          <div class="stat">
-            <span class="stat__num">0<span class="stat__suffix">R$</span></span>
-            <span class="stat__label">fins lucrativos</span>
-          </div>
-          <div class="stat">
-            <span class="stat__num">∞</span>
-            <span class="stat__label">curiosidade</span>
+            <pre class="code-card__body"><code><span class="c-comment"># o que rola por aqui</span>
+<span class="c-prompt">&gt;</span> conversas abertas
+<span class="c-prompt">&gt;</span> projetos em conjunto
+<span class="c-prompt">&gt;</span> dúvidas e ideias
+<span class="c-prompt">&gt;</span> aprendizado contínuo
+<span class="c-ok">✓</span> todo mundo é bem-vindo
+<span class="c-prompt">&gt;</span> <span class="c-cursor" aria-hidden="true">▍</span></code></pre>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- O que fazemos -->
-    <section class="section" id="fazemos">
+    <!-- Comunidade -->
+    <section class="section" id="comunidade">
+      <div class="container about">
+        <div class="about__copy reveal">
+          <span class="eyebrow"><span class="eyebrow__dot eyebrow__dot--purple"></span>Quem somos</span>
+          <h2 class="section__title">otoworks.org</h2>
+          <p>
+            A otoworks foi criada por apenas uma pessoa, querendo além de criar projetos, construir uma comunidade boa sem julgamento
+          </p>
+          <p>
+            Nosso foco é construir mais amizades e conhecer pessoas diferentes com o mesmo gosto
+          </p>
+          <ul class="check-list">
+            <li>
+              <svg class="icon icon--green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m20 6-11 11-5-5"/></svg>
+              Ajuda voluntária
+            </li>
+            <li>
+              <svg class="icon icon--purple" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m20 6-11 11-5-5"/></svg>
+              Código aberto por padrão
+            </li>
+            <li>
+              <svg class="icon icon--green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m20 6-11 11-5-5"/></svg>
+              Respeito
+            </li>
+          </ul>
+          <div class="about__actions">
+            <a class="btn btn--primary btn--sm" href="https://fluxer.app/" target="_blank" rel="noopener noreferrer">Entrar no Fluxer</a>
+            <a class="btn btn--ghost btn--sm" href="https://github.com/otoworks" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+          </div>
+        </div>
+
+        <div class="about__visual reveal" style="--d:100ms">
+          <div class="logo-frame">
+            <img src="assets/favicon.png" alt="Ícone da comunidade otoworks" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como participar -->
+    <section class="section section--steps" id="participe">
       <div class="container">
         <div class="section__head reveal">
-          <span class="eyebrow"><span class="eyebrow__dot eyebrow__dot--purple"></span>O que fazemos</span>
-          <h2 class="section__title">Tecnologia útil, sem complicação.</h2>
-          <p class="section__lead">Três coisas nos movem: resolver problemas reais, compartilhar o código e aprender juntos.</p>
+          <span class="eyebrow"><span class="eyebrow__dot"></span>Como participar</span>
+          <h2 class="section__title">Entrar é simples.</h2>
+          <p class="section__lead">Não precisa ser especialista — só ter curiosidade. A comunidade é feita de gente que está aprendendo também.</p>
         </div>
 
-        <div class="feature-grid">
-          <article class="feature-card reveal">
-            <span class="feature-card__icon feature-card__icon--green" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10H13l0-8Z"/></svg>
-            </span>
-            <h3>Automação</h3>
-            <p>Scripts e ferramentas que tiram tarefas repetitivas do seu caminho, para você focar no que importa.</p>
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <span class="step-card__num">01</span>
+            <h3>Entre no Fluxer</h3>
+            <p>O ponto de encontro da comunidade: conversas, dúvidas, ideias e projetos.</p>
+            <a class="step-card__link" href="https://fluxer.app/" target="_blank" rel="noopener noreferrer">
+              Abrir Fluxer
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+            </a>
           </article>
 
-          <article class="feature-card reveal" style="--d:80ms">
-            <span class="feature-card__icon feature-card__icon--purple" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6"/><path d="m16 6 6 6-6 6"/></svg>
-            </span>
-            <h3>Open source</h3>
-            <p>Tudo publicado aberto. Leia, use, modifique e contribua — o conhecimento é de todo mundo.</p>
+          <article class="step-card reveal" style="--d:80ms">
+            <span class="step-card__num">02</span>
+            <h3>Se apresente</h3>
+            <p>Conte o que você curte, o que já sabe e o que quer aprender. Sem pressão.</p>
           </article>
 
-          <article class="feature-card reveal" style="--d:160ms">
-            <span class="feature-card__icon feature-card__icon--gradient" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </span>
-            <h3>Comunidade</h3>
-            <p>Um espaço aberto no Fluxer para trocar ideias, tirar dúvidas e construir projetos juntos.</p>
+          <article class="step-card reveal" style="--d:160ms">
+            <span class="step-card__num">03</span>
+            <h3>Colabore</h3>
+            <p>Escolha um projeto, sugira uma ideia, teste algo ou ajude na documentação.</p>
+            <a class="step-card__link" href="https://github.com/otoworks" target="_blank" rel="noopener noreferrer">
+              Ver no GitHub
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+            </a>
+          </article>
+
+          <article class="step-card reveal" style="--d:240ms">
+            <span class="step-card__num">04</span>
+            <h3>Publique o seu</h3>
+            <p>Crie um projeto e adicione ao <code>projetos.json</code> para aparecer na vitrine.</p>
+            <a class="step-card__link" href="projetos.html">
+              Como publicar
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+            </a>
           </article>
         </div>
+
+        
       </div>
     </section>
 
@@ -175,8 +207,8 @@
       <div class="container">
         <div class="section__head section__head--row reveal">
           <div>
-            <span class="eyebrow"><span class="eyebrow__dot"></span>Em destaque</span>
-            <h2 class="section__title">Projetos recentes</h2>
+            <span class="eyebrow"><span class="eyebrow__dot eyebrow__dot--purple"></span>Feitos em conjunto</span>
+            <h2 class="section__title">Projetos da comunidade</h2>
           </div>
           <a class="link-arrow" href="projetos.html">
             Ver todos
@@ -199,56 +231,17 @@
       </div>
     </section>
 
-    <!-- Sobre -->
-    <section class="section" id="sobre">
-      <div class="container about">
-        <div class="about__copy reveal">
-          <span class="eyebrow"><span class="eyebrow__dot eyebrow__dot--purple"></span>Sobre nós</span>
-          <h2 class="section__title">Um time que gosta de resolver problemas.</h2>
-          <p>
-            A otoworks é uma equipe de desenvolvedores que cria programas para facilitar,
-            automatizar ou otimizar trabalhos — sempre sem fins lucrativos.
-          </p>
-          <p>
-            Somos uma comunidade de desenvolvedores ou, simplesmente, de pessoas que gostam
-            de tecnologia. Se você tem uma ideia ou quer contribuir, o Fluxer é o melhor lugar para começar.
-          </p>
-          <ul class="check-list">
-            <li>
-              <svg class="icon icon--green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m20 6-11 11-5-5"/></svg>
-              Projetos abertos e gratuitos
-            </li>
-            <li>
-              <svg class="icon icon--purple" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m20 6-11 11-5-5"/></svg>
-              Feitos para pessoas reais
-            </li>
-            <li>
-              <svg class="icon icon--green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m20 6-11 11-5-5"/></svg>
-              Aprendizado em comunidade
-            </li>
-          </ul>
-        </div>
-
-        <div class="about__visual reveal" style="--d:100ms">
-          <div class="logo-frame">
-            <img src="assets/otoworks.png" alt="Identidade visual da otoworks" loading="lazy">
-            <span class="logo-frame__glow" aria-hidden="true"></span>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- CTA -->
     <section class="section">
       <div class="container">
         <div class="cta reveal">
           <div class="cta__copy">
-            <h2>Tem uma ideia? A gente constrói junto.</h2>
-            <p>Entre na comunidade, compartilhe um projeto ou só venha conversar sobre tecnologia.</p>
+            <h2>A comunidade é feita de gente como você.</h2>
+            <p>Puxe assunto no Fluxer, mostre o que você faz ou só venha acompanhar. As portas estão abertas.</p>
           </div>
           <div class="cta__actions">
-            <a class="btn btn--primary" href="https://fluxer.app/" target="_blank" rel="noopener noreferrer">Participar do Fluxer</a>
-            <a class="btn btn--ghost" href="projetos.html">Ver projetos</a>
+            <a class="btn btn--primary" href="https://fluxer.app/" target="_blank" rel="noopener noreferrer">Entrar no Fluxer</a>
+            <a class="btn btn--ghost" href="https://github.com/otoworks" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
           </div>
         </div>
       </div>
@@ -259,22 +252,22 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <a class="brand brand--sm" href="index.html">
-          <span class="brand__mark" aria-hidden="true">o</span>
+          <span class="brand__mark" aria-hidden="true"><img src="assets/favicon.png" alt=""></span>
           <span class="brand__name">otoworks<span class="brand__dot">.org</span></span>
         </a>
-        <p>Ferramentas abertas para trabalhos mais simples.</p>
+        <p>Code, Vibecode ou larp</p>
       </div>
       <nav class="footer__links" aria-label="Links do rodapé">
         <a href="index.html">Início</a>
+        <a href="index.html#comunidade">Comunidade</a>
         <a href="projetos.html">Projetos</a>
-        <a href="index.html#sobre">Sobre</a>
         <a href="https://github.com/otoworks" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://fluxer.app/" target="_blank" rel="noopener noreferrer">Fluxer</a>
       </nav>
     </div>
     <div class="container footer__bottom">
-      <span>© <span data-year>2026</span> otoworks — sem fins lucrativos.</span>
-      <span class="footer__hint">Projetos gerenciados por <code>projetos.json</code></span>
+      <span>© <span data-year>2026</span> otoworks — feito pela comunidade.</span>
+      <span class="footer__hint">vibecoder = larper</span>
     </div>
   </footer>
 

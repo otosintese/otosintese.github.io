@@ -3,13 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projetos — otoworks</title>
-  <meta name="description" content="Explore os projetos open source da otoworks: ferramentas de automação, utilitários e experimentos da comunidade.">
+  <title>Projetos da comunidade — otoworks</title>
+  <meta name="description" content="Projetos abertos mantidos pela comunidade otoworks: ferramentas de automação, utilitários e experimentos feitos em conjunto.">
   <meta name="theme-color" content="#05070b">
-  <meta property="og:title" content="Projetos — otoworks">
-  <meta property="og:description" content="Ferramentas de automação, utilitários e experimentos open source da otoworks.">
+  <meta name="color-scheme" content="dark">
+  <meta name="author" content="otoworks">
+  <meta property="og:title" content="Projetos da comunidade — otoworks">
+  <meta property="og:description" content="Ferramentas de automação, utilitários e experimentos open source feitos pela comunidade otoworks.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/otoworks2.png">
+  <meta property="og:url" content="https://otoworks.org/projetos.html">
+  <meta property="og:image" content="https://otoworks.org/assets/otoworks2.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +28,7 @@
   <header class="site-header" data-header>
     <nav class="nav container" aria-label="Navegação principal">
       <a class="brand" href="index.html" aria-label="otoworks — início">
-        <span class="brand__mark" aria-hidden="true">o</span>
+        <span class="brand__mark" aria-hidden="true"><img src="assets/favicon.png" alt=""></span>
         <span class="brand__name">otoworks<span class="brand__dot">.org</span></span>
       </a>
 
@@ -35,8 +39,8 @@
       <div class="nav__menu" id="nav-menu" data-nav-menu>
         <ul class="nav__links">
           <li><a class="nav__link" href="index.html">Início</a></li>
+          <li><a class="nav__link" href="index.html#comunidade">Comunidade</a></li>
           <li><a class="nav__link is-active" href="projetos.html">Projetos</a></li>
-          <li><a class="nav__link" href="index.html#sobre">Sobre</a></li>
         </ul>
         <div class="nav__actions">
           <a class="btn btn--ghost btn--sm" href="https://github.com/otoworks" target="_blank" rel="noopener noreferrer">
@@ -57,11 +61,11 @@
           <span aria-hidden="true">/</span>
           <span aria-current="page">Projetos</span>
         </nav>
-        <span class="eyebrow reveal" style="--d:40ms"><span class="eyebrow__dot eyebrow__dot--purple"></span>Repositórios &amp; experimentos</span>
-        <h1 class="page-title reveal" style="--d:80ms">Nossos <span class="grad-text">projetos</span></h1>
+        <span class="eyebrow reveal" style="--d:40ms"><span class="eyebrow__dot eyebrow__dot--purple"></span>Vitrine da comunidade</span>
+        <h1 class="page-title reveal" style="--d:80ms">Projetos da <span class="grad-text">comunidade</span></h1>
         <p class="page-lead reveal" style="--d:120ms">
-          Ferramentas abertas para automatizar tarefas, facilitar o trabalho e experimentar ideias.
-          Clique em um cartão para abrir o projeto em uma nova aba.
+          Ferramentas abertas criadas e mantidas por gente da otoworks. Clique em um cartão
+          para abrir o projeto em uma nova aba — e sinta-se em casa para contribuir.
         </p>
       </div>
     </section>
@@ -111,13 +115,24 @@
           <button class="btn btn--ghost btn--sm" type="button" data-retry>Recarregar</button>
         </div>
 
-        <details class="how-to">
+        <div class="publish-banner reveal">
+          <div>
+            <h2>Tem um projeto feito por você?</h2>
+            <p>A vitrine é da comunidade. Publique seu projeto ou mande a ideia no Fluxer.</p>
+          </div>
+          <div class="publish-banner__actions">
+            <a class="btn btn--primary btn--sm" href="https://fluxer.app/" target="_blank" rel="noopener noreferrer">Mandar no Fluxer</a>
+            <a class="btn btn--ghost btn--sm" href="#publicar">Como publicar</a>
+          </div>
+        </div>
+
+        <details class="how-to" id="publicar">
           <summary>
             <span class="how-to__icon" aria-hidden="true">+</span>
-            Como adicionar um projeto
+            Como publicar um projeto
           </summary>
           <div class="how-to__body">
-            <p>Edite o arquivo <code>projetos.json</code> na raiz do site e adicione um objeto ao array <code>projects</code>:</p>
+            <p>Todo mundo pode publicar. Edite o arquivo <code>projetos.json</code> na raiz do site, adicione um objeto ao array <code>projects</code> e abra um pull request no GitHub:</p>
             <pre><code>{
   "title": "Meu projeto",
   "description": "Uma frase curta explicando o que ele faz.",
@@ -144,21 +159,21 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <a class="brand brand--sm" href="index.html">
-          <span class="brand__mark" aria-hidden="true">o</span>
+          <span class="brand__mark" aria-hidden="true"><img src="assets/favicon.png" alt=""></span>
           <span class="brand__name">otoworks<span class="brand__dot">.org</span></span>
         </a>
-        <p>Ferramentas abertas para trabalhos mais simples.</p>
+        <p>Comunidade open source de gente que gosta de tecnologia.</p>
       </div>
       <nav class="footer__links" aria-label="Links do rodapé">
         <a href="index.html">Início</a>
+        <a href="index.html#comunidade">Comunidade</a>
         <a href="projetos.html">Projetos</a>
-        <a href="index.html#sobre">Sobre</a>
         <a href="https://github.com/otoworks" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://fluxer.app/" target="_blank" rel="noopener noreferrer">Fluxer</a>
       </nav>
     </div>
     <div class="container footer__bottom">
-      <span>© <span data-year>2026</span> otoworks — sem fins lucrativos.</span>
+      <span>© <span data-year>2026</span> otoworks — feito pela comunidade.</span>
       <span class="footer__hint">Projetos gerenciados por <code>projetos.json</code></span>
     </div>
   </footer>

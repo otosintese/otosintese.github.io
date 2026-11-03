@@ -238,6 +238,42 @@
 }
 
 /* --------------------------------------------------------------------------
+   Convite para publicar
+   -------------------------------------------------------------------------- */
+
+.publish-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 48px;
+  padding: 26px 28px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: linear-gradient(120deg, rgba(63, 185, 80, .07), rgba(11, 15, 22, .6) 50%, rgba(163, 113, 247, .09));
+}
+
+.publish-banner h2 {
+  margin: 0 0 4px;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  letter-spacing: -.01em;
+}
+
+.publish-banner p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.publish-banner__actions {
+  display: flex;
+  flex: none;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* --------------------------------------------------------------------------
    Como adicionar um projeto
    -------------------------------------------------------------------------- */
 
@@ -357,6 +393,20 @@
 
   .state-box {
     padding: 42px 20px;
+  }
+
+  .publish-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px;
+  }
+
+  .publish-banner__actions {
+    width: 100%;
+  }
+
+  .publish-banner__actions .btn {
+    flex: 1;
   }
 
   .how-to__body {
